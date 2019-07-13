@@ -1,0 +1,161 @@
+#for random forest model 80 % train accuracy#
+
+Confusion Matrix:
+
+Predicted  one  others  zero  __all__
+Actual                               
+one          0       1     0        1
+others       0     121    18      139
+zero         0      12     3       15
+__all__      0     134    21      155
+
+
+Overall Statistics:
+
+Accuracy: 0.8
+95% CI: (0.7282920581447612, 0.8598800464327158)
+No Information Rate: ToDo
+P-Value [Acc > NIR]: 0.9905456560279955
+Kappa: 0.05487804878048825
+Mcnemar's Test P-Value: ToDo
+
+
+Class Statistics:
+
+Classes                                       one     others       zero
+Population                                    155        155        155
+P: Condition positive                           1        139         15
+N: Condition negative                         154         16        140
+Test outcome positive                           0        134         21
+Test outcome negative                         155         21        134
+TP: True Positive                               0        121          3
+TN: True Negative                             154          3        122
+FP: False Positive                              0         13         18
+FN: False Negative                              1         18         12
+TPR: (Sensitivity, hit rate, recall)            0   0.870504        0.2
+TNR=SPC: (Specificity)                          1     0.1875   0.871429
+PPV: Pos Pred Value (Precision)               NaN   0.902985   0.142857
+NPV: Neg Pred Value                      0.993548   0.142857   0.910448
+FPR: False-out                                  0     0.8125   0.128571
+FDR: False Discovery Rate                     NaN  0.0970149   0.857143
+FNR: Miss Rate                                  1   0.129496        0.8
+ACC: Accuracy                            0.993548        0.8   0.806452
+F1 score                                        0   0.886447   0.166667
+MCC: Matthews correlation coefficient         NaN  0.0515656  0.0617049
+Informedness                                    0  0.0580036  0.0714286
+Markedness                                    NaN  0.0458422  0.0533049
+Prevalence                             0.00645161   0.896774  0.0967742
+LR+: Positive likelihood ratio                NaN    1.07139    1.55556
+LR-: Negative likelihood ratio                  1   0.690647   0.918033
+DOR: Diagnostic odds ratio                    NaN    1.55128    1.69444
+FOR: False omission rate               0.00645161   0.857143  0.0895522
+
+# for testing the data the accuracy is 92%
+population: 13
+P: 0
+N: 13
+PositiveTest: 1
+NegativeTest: 12
+TP: 0
+TN: 12
+FP: 1
+FN: 0
+TPR: nan
+TNR: 0.9230769230769231
+PPV: 0.0
+NPV: 1.0
+FPR: 0.07692307692307693
+FDR: 1.0
+FNR: nan
+ACC: 0.9230769230769231
+F1_score: 0.0
+MCC: nan
+informedness: nan
+markedness: 0.0
+prevalence: 0.0
+LRP: nan
+LRN: nan
+DOR: nan
+FOR: 0.0
+
+2) Model : SVM
+
+Training Statistics
+
+Confusion Matrix:
+
+Predicted  one  others  zero  __all__
+Actual                               
+one          0       1     0        1
+others       1     119    19      139
+zero         0      12     3       15
+__all__      1     132    22      155
+
+
+Overall Statistics:
+
+Accuracy: 0.7870967741935484
+95% CI: (0.7142040762523915, 0.8486855490897706)
+No Information Rate: ToDo
+P-Value [Acc > NIR]: 0.988459925550243
+Kappa: 0.04320987654320974
+Mcnemar's Test P-Value: ToDo
+
+
+Class Statistics:
+
+Classes                                       one     others       zero
+Population                                    155        155        155
+P: Condition positive                           1        139         15
+N: Condition negative                         154         16        140
+Test outcome positive                           1        132         22
+Test outcome negative                         154         23        133
+TP: True Positive                               0        119          3
+TN: True Negative                             153          3        121
+FP: False Positive                              1         13         19
+FN: False Negative                              1         20         12
+TPR: (Sensitivity, hit rate, recall)            0   0.856115        0.2
+TNR=SPC: (Specificity)                   0.993506     0.1875   0.864286
+PPV: Pos Pred Value (Precision)                 0   0.901515   0.136364
+NPV: Neg Pred Value                      0.993506   0.130435   0.909774
+FPR: False-out                         0.00649351     0.8125   0.135714
+FDR: False Discovery Rate                       1  0.0984848   0.863636
+FNR: Miss Rate                                  1   0.143885        0.8
+ACC: Accuracy                            0.987097   0.787097        0.8
+F1 score                                        0   0.878229   0.162162
+MCC: Matthews correlation coefficient -0.00649351  0.0373296  0.0544612
+Informedness                          -0.00649351  0.0436151  0.0642857
+Markedness                            -0.00649351  0.0319499  0.0461381
+Prevalence                             0.00645161   0.896774  0.0967742
+LR+: Positive likelihood ratio                  0    1.05368    1.47368
+LR-: Negative likelihood ratio            1.00654   0.767386    0.92562
+DOR: Diagnostic odds ratio                      0    1.37308    1.59211
+FOR: False omission rate               0.00649351   0.869565  0.0902256
+
+# Testing Statistics#
+population: 13
+P: 0
+N: 13
+PositiveTest: 2
+NegativeTest: 11
+TP: 0
+TN: 11
+FP: 2
+FN: 0
+TPR: nan
+TNR: 0.8461538461538461
+PPV: 0.0
+NPV: 1.0
+FPR: 0.15384615384615385
+FDR: 1.0
+FNR: nan
+ACC: 0.8461538461538461
+F1_score: 0.0
+MCC: nan
+informedness: nan
+markedness: 0.0
+prevalence: 0.0
+LRP: nan
+LRN: nan
+DOR: nan
+FOR: 0.0
